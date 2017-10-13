@@ -8,9 +8,13 @@ checkSeconds() {
     return age;
 }
 
-dateDifference() {
+mercuryYears() {
+  let ageInMercury = (this.age * 4.2);
+  return ageInMercury;
+}
 
-
+venusYears() {
+  let ageInVenus = (this.age * 1.62)
 }
 
 }
