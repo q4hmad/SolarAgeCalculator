@@ -11,6 +11,8 @@ $(document).ready(function() {
   });
 
   $(document).ready(function(){
-  $('#time').text(moment()format());
+  $('#time').text(moment());
+  let [day,month,year] = $('#datePicker').val().split('-');
+
 });
 });

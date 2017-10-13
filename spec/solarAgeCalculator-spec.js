@@ -27,6 +27,13 @@ describe('Poem', function() {
   expect(age.jupiterYears()).toEqual(142.32);
   });
 
+  it("will determine a person'slife expectancy based on where they live", function() {
+  var age = new Solar("United States");
+  expect(age.lifeExpectancy()).toEqual("You can expect to live another 45 years.");
+  });
+
+  
+
 
 
 
