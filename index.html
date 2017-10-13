@@ -5,7 +5,7 @@
     <link href="build/css/vendor.css" rel="stylesheet" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>getcher haiku on</title>
+    <title>Solar Age Calculator</title>
   </head>
   <body>
     <div class="container">
@@ -17,14 +17,11 @@
         <button id="submit" class="btn-success" type="submit" name="button">Submit!</button>
       </form>
       <br>
-      <form id="enterBirthDate">
-        <div class="form-control">
-        <label for="dob">Enter your age:</label>
-        <input id="dob" name="dob" type="text">
-      </div>
-        <button id="submit" class="btn-success" type="submit" name="button">Submit!</button>
-      </form>
-      <h2 id="theirAge"></h2>
+      <div class="col-md-10">
+        <p>You have been alive for approximately </p>
+        <h6 id="theirAge"></h6><p>seconds! Who knew?!</p>
+
+    </div>
     </div>
     <h3 id="time"></h3>
   </body>

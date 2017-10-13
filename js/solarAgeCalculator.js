@@ -28,5 +28,12 @@ jupiterYears() {
   return ageOnJupiter;
 }
 
+dateDifference(birthDate)
+   moment("06-26-1996", "")
+   let timeNow = moment();
+   let secondsAlive = (timeNow - birthdate)
+   return secondsAlive
+}
+
 
 }

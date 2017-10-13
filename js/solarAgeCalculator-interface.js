@@ -11,6 +11,6 @@ $(document).ready(function() {
   });
 
   $(document).ready(function(){
-  $('#time').text(moment());
+  $('#time').text(moment()format());
 });
 });
