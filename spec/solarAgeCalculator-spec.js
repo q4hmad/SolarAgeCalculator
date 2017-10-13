@@ -22,6 +22,12 @@ describe('Poem', function() {
   expect(age.marsYears()).toEqual(22.56);
   });
 
+  it("will determine a person's age in Jupiter years", function() {
+  var age = new Solar(12);
+  expect(age.jupiterYears()).toEqual(142.32);
+  });
+
+
 
 
 
