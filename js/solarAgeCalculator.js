@@ -9,12 +9,18 @@ checkSeconds() {
 }
 
 mercuryYears() {
-  let ageInMercury = (this.age * 4.2);
+  let ageInMercury = (this.age * .24);
   return ageInMercury;
 }
 
 venusYears() {
-  let ageInVenus = (this.age * 1.62)
+  let ageInVenus = (this.age * .62);
+  return ageInVenus;
+}
+
+marsYears() {
+  let ageInMars = (this.age * 1.88);
+  return ageInMars;
 }
 
 }

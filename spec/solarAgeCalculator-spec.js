@@ -9,13 +9,19 @@ describe('Poem', function() {
 
   it("will determine a person's age in Mercury years", function() {
   var age = new Solar(12);
-  expect(age.mercuryYears()).toEqual(50.400000000000006);
+  expect(age.mercuryYears()).toEqual(2.88);
   });
 
-  it("will tdetermine a person's age in Venus years", function() {
-  var age = new Solar(10);
-  expect(age.mercuryYears()).toEqual(42);
+  it("will determine a person's age in Venus years", function() {
+  var age = new Solar(12);
+  expect(age.venusYears()).toEqual( 7.4399999999999995 );
   });
+
+  it("will determine a person's age in Mars years", function() {
+  var age = new Solar(12);
+  expect(age.marsYears()).toEqual(22.56);
+  });
+
 
 
 
