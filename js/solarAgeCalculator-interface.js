@@ -10,9 +10,19 @@ $(document).ready(function() {
     $("#theirAge").text(ageChecker.checkSeconds());
   });
 
-  $(document).ready(function(){
-  $('#time').text(moment());
-  let [day,month,year] = $('#datePicker').val().split('-');
+$(document).ready(function(){
+  $("#check").on('click', function() {
+    var moment = moment();
+    var now = moment($("#dateOfBirth").val());
+    var diff = now.diff(moment);
+    $('#time').text("diff between now and moment in msecs-", diff);
 
+
+  });
 });
-});
+
+
+
+
+// let [day,month,year] = $('#datePicker').val().split('-');
+//

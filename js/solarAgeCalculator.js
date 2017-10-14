@@ -28,18 +28,18 @@ export class Solar {
       return ageOnJupiter;
     }
 
-    dateDifference(birthDate)
-       moment("06-26-1996", "")
-       let timeNow = moment().subtract(birthdate.)
-       let birthdateInteger = birthdate
-       let secondsAlive = (timeNow - birthdate)
-       return secondsAlive
-    }
-    dateDifference(birthDate) {
-     let secondsInAge = moment.duration("12:10:12: PM", "HH:mm:ss: A").asSeconds();
-     let secondsAlive = (secondsInAge - this.age);
-     return secondsAlive
-    }
+    // dateDifference(birthDate)
+    //    moment("06-26-1996", "")
+    //    let timeNow = moment().subtract(birthdate.)
+    //    let birthdateInteger = birthdate
+    //    let secondsAlive = (timeNow - birthdate)
+    //    return secondsAlive
+    // }
+    // dateDifference(birthDate) {
+    //  let secondsInAge = moment.duration("12:10:12: PM", "HH:mm:ss: A").asSeconds();
+    //  let secondsAlive = (secondsInAge - this.age);
+    //  return secondsAlive
+    // }
 
 
 }
