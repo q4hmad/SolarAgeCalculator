@@ -6,9 +6,9 @@ $(document).ready(function() {
     var age = parseFloat($("#age").val());
     var ageChecker = new Solar(age);
     $("#theirAge").append(ageChecker.checkSeconds());
-    $("#theirAge").append(ageChecker.mercuryYears());
-    $("#theirAge").append(ageChecker.venusYears());
-    $("#theirAge").append(ageChecker.marsYears());
-    $("#theirAge").append(ageChecker.jupiterYears());
+    $("#theirAgeMercury").append(ageChecker.mercuryYears());
+    $("#theirAgeVenus").append(ageChecker.venusYears());
+    $("#theirAgeMars").append(ageChecker.marsYears());
+    $("#theirAgeJupiter").append(ageChecker.jupiterYears());
   });
 });
