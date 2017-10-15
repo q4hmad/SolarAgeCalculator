@@ -28,6 +28,11 @@ export class Solar {
       return ageOnJupiter;
     }
 
+    timeSinceBirth(dob) {
+      let moment = moment();
+      let  timeAlive = (moment.diff(dob))
+    }
+
 
 
 }
