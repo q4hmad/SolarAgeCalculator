@@ -1,6 +1,6 @@
 import { Solar } from './../js/solarAgeCalculator.js';
 
-describe('Poem', function() {
+describe('Solar', function() {
 
   it("will show age in seconds", function() {
   var age = new Solar(1);
@@ -29,6 +29,9 @@ describe('Poem', function() {
 
   it("will take two dates, the present and their birthdate, and tell how long they've been alive", function() {
   var age = new Solar(10/14/2017, 10:07 PM);
-  expect(age.timeSinceBirth()).toEqual(184119);
+  expect(age.timeSinceBirth()).toEqual((moment().diff(10/14/2017, 10:07 PM));
+
   });
+
+
 });
