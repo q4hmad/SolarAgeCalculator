@@ -5,9 +5,7 @@ $(document).ready(function() {
     var dob = $("#dob").val();
     var timeAlive = new Solar(dob)
     var test = timeAlive.timeSinceBirth();
-    
+
     $("#timeAlive").text(timeAlive.timeSinceBirth());
-
-
   });
  });

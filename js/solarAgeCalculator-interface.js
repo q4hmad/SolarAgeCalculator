@@ -5,6 +5,10 @@ $(document).ready(function() {
     event.preventDefault();
     var age = parseFloat($("#age").val());
     var ageChecker = new Solar(age);
-    $("#theirAge").text(ageChecker.checkSeconds());
+    $("#theirAge").append(ageChecker.checkSeconds());
+    $("#theirAge").append(ageChecker.mercuryYears());
+    $("#theirAge").append(ageChecker.venusYears());
+    $("#theirAge").append(ageChecker.marsYears());
+    $("#theirAge").append(ageChecker.jupiterYears());
   });
 });

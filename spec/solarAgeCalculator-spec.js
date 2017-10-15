@@ -28,14 +28,7 @@ describe('Poem', function() {
   });
 
   it("will take two dates, the present and their birthdate, and tell how long they've been alive", function() {
-  var age = new Solar(2006-01-31T04:45);
-  expect(age.lifeExpectancy()).toEqual();
+  var age = new Solar(10/14/2017, 10:07 PM);
+  expect(age.timeSinceBirth()).toEqual(184119);
   });
-
-
-
-
-
-
-
 });

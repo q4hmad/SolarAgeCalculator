@@ -29,9 +29,10 @@ export class Solar {
     }
 
     timeSinceBirth() {
-
       let timeAlive = (moment().diff(this.age));
-      return timeAlive
+      let timeAliveSec = (timeAlive/1000)
+      let timeAliveMinutes = (timeAliveSec/60)
+      return timeAliveMinutes;
     }
 
 
