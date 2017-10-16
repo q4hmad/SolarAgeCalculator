@@ -4,8 +4,6 @@ $(document).ready(function() {
     event.preventDefault();
     var dob = $("#dob").val();
     var timeAlive = new Solar(dob);
-    var test = timeAlive.timeSinceBirth();
-    console.log(test);
 
     $("#timeAlive").text(timeAlive.timeSinceBirth());
   });

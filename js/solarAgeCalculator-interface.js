@@ -10,6 +10,7 @@ $(document).ready(function() {
     $("#theirAgeVenus").append(ageChecker.venusYears());
     $("#theirAgeMars").append(ageChecker.marsYears());
     $("#theirAgeJupiter").append(ageChecker.jupiterYears());
-    $("#theirLifeExpectancy").append(ageChecker.lifeExpectancy);
+    $("#lifeExpectancyEarth").text(ageChecker.lifeExpectancyEarth());
+    $("#lifeExpectancyPlanets").text(ageChecker.lifeExpectancyPlanets())
   });
 });
