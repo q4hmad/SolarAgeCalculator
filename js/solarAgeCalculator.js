@@ -52,8 +52,8 @@ export class Solar {
       SouthAmerica: '74',
       Australia: '79'
       };
-      for (const [key, value] of Object.entries(countries)) {
-     console.log(`${key}: ${value}`);
+      console.log(Object.values(countries));
+      return(Object.values(countries));
     }
-  }
+  
 }
