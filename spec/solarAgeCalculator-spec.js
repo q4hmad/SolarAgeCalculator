@@ -27,11 +27,26 @@ describe('Solar', function() {
   expect(age.jupiterYears()).toEqual(142.32);
   });
 
-  it("will take two dates, the present and their birthdate, and tell how long they've been alive", function() {
-  var age = new Solar(10/14/2017, 10:07 PM);
-  expect(age.timeSinceBirth()).toEqual((moment().diff(10/14/2017, 10:07 PM));
+  it("will calculate a user's life expectancy if they live on Mercury", function() {
+    var age = new Solar(10, 70);
+    expect(age.lifeExpectancyMercury()).toEqual(14.399999999999999 )
+  })
 
-  });
+  it("will calculate a user's life expectancy if they live on Venus", function() {
+    var age = new Solar(10, 70);
+    expect(age.lifeExpectancyVenus()).toEqual(40.800000000000004)
+  })
+
+  it("will calculate a user's life expectancy if they live on Mars", function() {
+    var age = new Solar(10, 70);
+    expect(age.lifeExpectancyMars()).toEqual(112.8)
+  })
+
+  it("will calculate a user's life expectancy if they live on Jupiter", function() {
+    var age = new Solar(10, 70);
+    expect(age.lifeExpectancyJupiter()).toEqual(711.5999999999999 )
+  })
+
 
 
 });
