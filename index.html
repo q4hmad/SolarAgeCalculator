@@ -9,34 +9,50 @@
   </head>
   <body>
     <div class="container">
+      <br>
+      <h1>Today's Date:</h1><h2 id="time">  </h2>
+      <br>
+      <form id="birthDate">
+        <h3>Enter your date of birth to calculate time since birth:</h3>
+        <label for="dob">Today's Date:</label>
+        <input type="datetime-local" name value placeholder id="dob">
+        <button id="check" class="btn-success" type="submit">Submit</button>
+      </form>
+      <h3>The number of milliseconds that have passed since you were born:<span id="timeAlive"></span></h3>
+
       <form id="enterAge">
         <div class="form-control">
+          <form id="enterYourAge">
           <label for="age">Enter your age:</label>
           <input id="age" name="age" type="text">
-        </div>
-        <div class="form-control">
-          <label for="lifeExpectancy">Enter average life expectancy in your area:</label>
+          <label for="lifeExpectancy">Please provide the average life expectancy in your area:</label>
           <input id="lifeExpectancy" name="lifeExpectancy" type="text">
-        </div>
-        <button id="submit" class="btn-success" type="submit" name="button">Submit</button>
-      </form>
+          <button id="submit" class="btn-success" type="submit" name="button">Submit</button>
+        </form>
       <br>
-        <p>You have been alive for approximately <span id="theirAge"></span> Earth seconds,</p>
-        <p>approximately <span id="theirAgeMercury"></span> seconds if you lived on planet Mercury</p>
-        <p>approximately<span id="theirAgeVenus"></span> seconds if you lived on planet Venus</p>
-        <p>approximately<span id="theirAgeMars"></span>seconds if you lived on planet Mars</p>
-        <p>approximately<span id="theirAgeJupiter"></span>seconds if you lived on planet Jupiter</p>
-    <div id="time">
-    </div>
-    <br>
-    <form id="birthDate">
-      <label for="dob"></label>
-      <input type="datetime-local" name value placeholder id="dob">
-      <button id="check" class="btn-success" type="submit">Submit</button>
-    </form>
-    <p>The number of milliseconds that have passed since you were born:<span id="timeAlive"></span></p>
-    <h4>Life Expectancy for some continents here on Earth: <br><span id="lifeExpectancyEarth"></span></h4>
-    <h4>Life Expectancy if you're heading North: <br><span id="lifeExpectancyPlanets"></span></h4>
+      <h3>Your age in seconds is:<span id="ageSeconds"></span></h3>
+      <form id="lifeExpectancyForPlanets">
+      <ul> </ul>
+     </form>
+      <br>
+        <h4>Here is your age on some planets:</h4>
+        <ul>
+          <li>Mercury:<span id="theirAgeMercury"></span> </li>
+          <li>Venus:<span id="theirAgeVenus"></li>
+          <li>Mars:<span id="theirAgeMars"></li>
+          <li>Jupiter:<span id="theirAgeJupiter"></span></li>
+        </ul>
+        <h4>Here is the calculated life expectancy for those planets based on your age:</h4>
+        <ul>
+          <li>Mercury:<span id="lEMercury"></span> </li>
+          <li>Venus:<span id="lEVenus"></li>
+          <li>Mars:<span id="lEMars"></li>
+          <li>Jupiter:<span id="lEJupiter"></span></li>
+        </ul>
+
+
+
+
 
 
     </div>

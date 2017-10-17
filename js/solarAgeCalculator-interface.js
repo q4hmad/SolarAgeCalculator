@@ -3,17 +3,17 @@ import { Solar } from './../js/solarAgeCalculator.js';
 $(document).ready(function() {
   $("form#enterAge").submit(function(event) {
     event.preventDefault();
-    var age = parseFloat($("#age").val());
-    var lifeExpectancy = parseFloat($("#lifeExpectancy").val());
-    var ageChecker = new Solar(age);
-    var lifeExpectancyChecker = new Solar(lifeExpectancy);
-    $("#theirAge").append(lifeExpectancyChecker.lifeExpectancy());
-    $("#theirAge").append(ageChecker.checkSeconds());
-    $("#theirAgeMercury").append(ageChecker.mercuryYears());
-    $("#theirAgeVenus").append(ageChecker.venusYears());
-    $("#theirAgeMars").append(ageChecker.marsYears());
-    $("#theirAgeJupiter").append(ageChecker.jupiterYears());
-    $("#lifeExpectancyEarth").text(ageChecker.lifeExpectancyEarth());
-    $("#lifeExpectancyPlanets").text(ageChecker.lifeExpectancyPlanets())
+    var age = parseInt($("#age").val());
+    var lifeExpectancy = $("#lifeExpectancy").val();
+    var ageLifeExpectancy = new Solar(age, lifeExpectancy);
+    $("#ageSeconds").append(ageLifeExpectancy.checkSeconds());
+    $("#theirAgeMercury").append(ageLifeExpectancy.mercuryYears());
+    $("#theirAgeVenus").append(ageLifeExpectancy.venusYears());
+    $("#theirAgeMars").append(ageLifeExpectancy.marsYears());     $("#theirAgeJupiter").append(ageLifeExpectancy.jupiterYears());
+    $("#lEMercury").append(ageLifeExpectancy.lifeExpectancyMercury());
+    $("#lEVenus").append(ageLifeExpectancy.lifeExpectancyVenus());
+    $("#lEMars").append(ageLifeExpectancy.lifeExpectancyMars());
+    $("#lEJupiter").append(ageLifeExpectancy.lifeExpectancyJupiter());
+
   });
 });

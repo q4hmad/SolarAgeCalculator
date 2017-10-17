@@ -67,4 +67,5 @@ export class Solar {
       let timeOnJupiter = (timeRemaining * 11.86);
       return timeOnJupiter;
     }
+
   }
